@@ -11,3 +11,8 @@ alias ll='ls -l'
 alias la='ls -a'
 PS1='[\u@\h \W]\$ '
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+#wal-tile() {
+#    wal -n -i "$@"
+#    feh --bg-tile "$(< "${HOME}/.cache/wal/wal")"
+#}
+#(cat ~/.cache/wal/sequences &)
