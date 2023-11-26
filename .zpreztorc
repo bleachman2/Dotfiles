@@ -1,0 +1,18 @@
+#https://github.com/sorin-ionescu/prezto/tree/master/modules/autosuggestions
+zstyle ':prezto:load' pmodule \
+	'utility' \
+	'syntax-highlighting' \
+	'history-substring-search' \
+	'autosuggestions' \
+	'prompt'
+
+zstyle :prezto:module:prompt theme powerlevel10k
+
+
+zstyle ':prezto:module:syntax-highlighting' highlighters \
+  'main' \
+  'brackets' \
+  'pattern' \
+  'line' \
+  'cursor' \
+  'root'
