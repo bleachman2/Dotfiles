@@ -23,4 +23,4 @@ compinit
 
 #alias 
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
+alias pkglistbuild= 'pacman -Qqen > ~/.config/pkglist.txt && pacman -Qqem > ~/.config/foreignpkglist.txt' #create files with list of pck

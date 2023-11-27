@@ -1,0 +1,6 @@
+catppuccin-gtk-theme-mocha
+hyprland-nvidia-git
+nwg-look-bin
+paru
+prezto-git
+unixbench
