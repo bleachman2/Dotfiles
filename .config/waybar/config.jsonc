@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces", "hyprland/submap","network", "cpu", "memory", "temperature"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["mpd", "idle_inhibitor", "pulseaudio",  "clock"],
+    "modules-right": ["idle_inhibitor", "custom/media", "pulseaudio",  "clock"],
 // Modules configuration
     // "hyprland/workspaces": {
     //     "disable-scroll": true,
@@ -159,16 +159,20 @@
         "on-click": "pavucontrol"
     },
     "custom/media": {
-        "format": "{icon} {}",
-        "return-type": "json",
-        "max-length": 40,
-        "format-icons": {
+   	 "format": "{icon} {}",
+   	 "escape": true,
+   	 "return-type": "json",
+    	 "max-length": 40,
+	 "format-icons": {
             "spotify": "",
-            "default": "🎜"
-        },
-        "escape": true,
-        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
-    }
+            "default": "🎜"},
+         "on-click": "playerctl play-pause",
+	 "on-click-right": "playerctl stop",
+	 "smooth-scrolling-threshold": 5, // This value was tested using a trackpad, it should be lowered if using a mouse.
+	 "on-scroll-up": "playerctl next",
+	 "on-scroll-down": "playerctl previous",
+   	 "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources/custom_modules folder
+	},
+
 }
 
