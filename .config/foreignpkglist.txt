@@ -1,8 +1,10 @@
 catppuccin-gtk-theme-mocha
 code-features
 code-marketplace
-hyprland-nvidia-git
+hyprland-git
+hyprwayland-scanner-git
 nwg-look-bin
 paru
 prezto-git
 unixbench
+xdg-desktop-portal-hyprland-git
